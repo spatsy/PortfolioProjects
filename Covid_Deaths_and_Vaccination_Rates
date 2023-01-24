@@ -159,7 +159,7 @@ FROM percent_population_vaccinated
 
 -- Creating view to store data for later visualizations
 
-CREATE VIEW percent_population_vax AS
+CREATE VIEW percent_population_vaccinated AS
 SELECT cd.continent,cd.location,cd.date,cd.population,
 	cv.new_vaccinations,SUM(cv.new_vaccinations) 
 	OVER (PARTITION by cd.location ORDER BY cd.location,cd.date) 
