@@ -1,2 +1,2 @@
-# data_analytics
+# PortfolioProjects
 Data Analytics Projects
