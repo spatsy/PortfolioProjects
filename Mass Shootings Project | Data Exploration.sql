@@ -7,7 +7,6 @@ FROM mass_shootings;
 SELECT DISTINCT(state), 
 	SUM(dead) AS deaths 
 FROM mass_shootings
-WHERE date BETWEEN '1991-10-16' AND '2022-07-31'
 GROUP BY state
 ORDER BY deaths DESC;
 
@@ -16,7 +15,6 @@ ORDER BY deaths DESC;
 SELECT DISTINCT(state), 
 	SUM(dead) AS deaths 
 FROM mass_shootings
-WHERE date BETWEEN '1991-10-16' AND '2022-07-31'
 GROUP BY state
 ORDER BY deaths DESC
 LIMIT 10;
@@ -41,7 +39,6 @@ LIMIT 10;
 SELECT DISTINCT(state), 
 	SUM(injured) 
 FROM mass_shootings
-WHERE date BETWEEN '1991-10-16' AND '2022-07-31'
 GROUP BY state
 ORDER BY SUM(injured) DESC
 LIMIT 10;
@@ -51,7 +48,6 @@ LIMIT 10;
 SELECT DISTINCT(state), 
 	SUM(total) AS totals
 FROM mass_shootings
-WHERE date BETWEEN '1991-10-16' AND '2022-07-31'
 GROUP BY state
 ORDER BY totals DESC
 LIMIT 10;
