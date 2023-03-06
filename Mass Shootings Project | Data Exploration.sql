@@ -1,4 +1,4 @@
-![Tableau Visualization](https://public.tableau.com/app/profile/steve.patsy/viz/USAMassShootingsDashboard/USAMassShootingsDashboard)
+https://public.tableau.com/app/profile/steve.patsy/viz/USAMassShootingsDashboard/USAMassShootingsDashboard
 
 —Lets start by looking at the data
 SELECT *
