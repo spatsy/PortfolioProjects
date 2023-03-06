@@ -1,4 +1,4 @@
-https://public.tableau.com/app/profile/steve.patsy/viz/USAMassShootingsDashboard/USAMassShootingsDashboard
+[Link to viz --->](https://public.tableau.com/app/profile/steve.patsy/viz/USAMassShootingsDashboard/USAMassShootingsDashboard)
 
 —Lets start by looking at the data
 SELECT *
