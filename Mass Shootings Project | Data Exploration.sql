@@ -1,3 +1,5 @@
+[Tableau Visualization](https://public.tableau.com/app/profile/steve.patsy/viz/USAMassShootingsDashboard/USAMassShootingsDashboard)
+
 —Lets start by looking at the data
 SELECT *
 FROM mass_shootings;
@@ -51,3 +53,10 @@ FROM mass_shootings
 GROUP BY state
 ORDER BY totals DESC
 LIMIT 10;
+
+--Mass Shootings by Year > 2022
+SELECT date, city, state, MAX(dead) AS deaths, injured, total, description
+FROM mass_shootings
+WHERE date > '2022-01-01'
+GROUP BY date, city, state, injured, total, description
+ORDER BY date DESC;
